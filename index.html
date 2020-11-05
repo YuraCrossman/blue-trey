@@ -104,7 +104,7 @@
 
     <script>
         function funcBefore() {
-            $('#content').html("<div class='text-center' style='z-index:9999'><img width='200%' src='img/preload.gif'></div>");
+            $('#content').html("<div class='text-center' style='z-index:9999'><img width='200%' src='/blue-trey/img/preload.gif'></div>");
         }
         function funcSuccess(data) {
             $('#content').html(data);
@@ -113,7 +113,7 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
         function dl(){
-            history.pushState({foo: 'bar'}, "Blue Trey | Old voice bank's", '/?content=download')
+            history.pushState({foo: 'bar'}, "Blue Trey | Old voice bank's", '/blue-trey/?content=download')
             $.ajax({
               type: "GET",
               url: 'download',
@@ -121,7 +121,7 @@
               success: funcSuccess
             });}
         function gallery(){
-            history.pushState({foo: 'bar'}, "Blue Trey | Gallery", '/?content=gallery')
+            history.pushState({foo: 'bar'}, "Blue Trey | Gallery", '/blue-trey/?content=gallery')
             $.ajax({
               type: "GET",
               url: 'gallery',
@@ -155,7 +155,7 @@
         <div class="collapse navbar-collapse" id="navbar-nav-header">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/" onclick="history.pushState({foo: 'bar'}, 'Blue Trey', '/')" style="text-align: center">Home</a>
+                    <a class="nav-link" href="/" onclick="history.pushState({foo: 'bar'}, 'Blue Trey', '/blue-trey')" style="text-align: center">Home</a>
                     <a class="nav-link" href="" tyle="text-align: center" link="#download">Download (down)</a>
                 </li>
                 <li class="nav-item">
