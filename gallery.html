@@ -1,0 +1,142 @@
+<!-- External JS -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/app.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="images/emojify.min.js"></script>
+    <script src="https://unpkg.com/seethru@4/dist/seeThru.min.js"></script>
+    <script async src="https://yastatic.net/pcode-native/loaders/loader.js"></script>
+
+    <script>
+        $(document).ready (function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+<div id="side-nav" class="sidenav">
+	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
+	<div class="sidenav-content">
+        <a class="btn btn-success" href="https://paypal.me/yuracrossman" target="_blank">Donat PayPal</a><br>
+		<h5 id="device">Well, there’s nothing so far)</h5>
+        <script>
+            var userDeviceArray = [
+                {device: 'Android', platform: /Android/},
+                {device: 'iPhone', platform: /iPhone/},
+                {device: 'iPad', platform: /iPad/},
+                {device: 'Symbian', platform: /Symbian/},
+                {device: 'Windows Phone', platform: /Windows Phone/},
+                {device: 'Tablet OS', platform: /Tablet OS/},
+                {device: 'Linux', platform: /Linux/},
+                {device: 'Windows', platform: /Windows NT/},
+                {device: 'Macintosh', platform: /Macintosh/}
+            ];
+
+            var platform = navigator.userAgent;
+
+            function getPlatform() {
+                for (var i in userDeviceArray) {
+                    if (userDeviceArray[i].platform.test(platform)) {
+                        return userDeviceArray[i].device;
+                    }
+                }
+                return 'Неизвестная платформа!' + platform;
+            }
+            console.log('Ваша платформа: ' + getPlatform());
+            if (getPlatform()=='Windows'){
+                $('#device').html('<h4 id="device">Youre platform: '+getPlatform()+'</h4><br><h6>Well done!</h6>');
+            }
+            else if (getPlatform()=='Linux'){
+                $('#device').html('<h4 id="device">Youre platform: '+getPlatform()+'</h4><br><h6>I hope you know what to do?</h6>');
+            }
+            else if (getPlatform()=='Android'||'iPhone'||'iPad'||'Symbian'||'Windows Phone'||'Tablet OS'||'Machintoch'){
+                $('#device').html('<h4 id="device">Youre platform: '+getPlatform()+'</h4><br><h3>This UTAU and program are not supported by your device!</h3>');
+            }
+            else if (getPlatform()=='Неизвестная платформа!'||'Unknown platform!'){
+                $('#device').html('<h4 id="device">Um ... what is your device?</h4>');
+            }
+            else {
+                $('#device').html('<h4 id="device">Um ... what is your device?</h4>');
+            }
+        </script>
+	</div>
+</div>
+<div class="jumbotron jumbotron-single d-flex align-items-center" style="background-image: url(img/utau_bg3.png)">
+  <div class="container text-center">
+    <h1 class="display-2 mb-4">Gallery</h1>
+  </div>
+</div>	<!-- Blog Section -->
+<section class="bg-grey">
+    <div class="container">
+        <div class="section-content">
+            <div class="title-wrap mb-5" data-aos="fade-up"><h2>Image</h2></div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="img/blue_trey_full_body.png" data-toggle='tooltip' title="By Aoki Kosuke. Download" target="_blank" download><img class="img-thumbnail rounded" width="30%" src="img/blue_trey_full_body.png" data-aos="fade-up"></a>
+                    <a href="img/leto.png" data-toggle='tooltip' title="Download" target="_blank" download><img class="img-thumbnail rounded" width="30%" src="img/leto.png" data-aos="fade-down"></a>
+                    <a href="img/Trey.jpg" data-toggle='tooltip' title="By Aoki Kosuke. Download" target="_blank" download><img class="img-thumbnail rounded" width="30%" src="img/Trey.jpg" data-aos="fade-down"></a>
+                    <a href="img/trey1.png" data-toggle='tooltip' title="By Kate Malina. Download" target="_blank" download><img class="img-thumbnail rounded" width="30%" src="img/trey1.png" data-aos="fade-up"></a>
+		    <a href="img/trey2.jpg" data-toggle='tooltip' title="By 「YokoH︎」. Download" target="_blank" download><img class="img-thumbnail rounded" width="30%" src="img/trey2.jpg" data-aos="fade-up"></a>
+		    <a href="img/Trey_pony.png" data-toggle='tooltip' title="By Marta. Download" target="_blank" download><img class="img-thumbnail rounded" width="30%" src="img/Trey_pony.png" data-aos="fade-up"></a>
+	        </div>
+<script>
+    (yaads = window.yaads || []).push({
+        id: "630054-4",
+        render: "#id-630054-4"
+    });
+</script>
+<div id="id-630054-4"></div>
+        </div>
+    </div>
+</section>
+<section class="overlay bg-fixed" style="background-image: url(img/utau_bg2.png)">
+        <div class="container">
+            <div class="section-content">
+                <div class="col-md-12 title-wrap mb-5" data-aos="fade-up"><h2>YouTube</h2></div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <iframe data-aos="fade-up" width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLEnPwfPcPdA9ZMug8rQhsu5_Qn4Tm0T1F" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="bg-grey">
+    <div class="container">
+        <div class="section-content">
+            <div class="title-wrap mb-5" data-aos="fade-up"><h2>Music</h2></div>
+            <div class="row">
+                 <div class="col-md-6">
+                    <iframe data-aos="fade-up" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/825120677%3Fsecret_token%3Ds-235rj&color=%2300c1ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+		</div>
+		<div class="col-md-6">
+                    <div id="vk_playlist_-177060309_1" data-aos="fade-up"></div>
+                    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?163"></script>
+                    <script type="text/javascript">
+                    (function() {
+                        VK.Widgets.Playlist("vk_playlist_-177060309_1", -177060309, 1,'f5f65dddb83aa2f77d');
+                    }());
+                    </script>
+		</div>
+		<div class="col-md-12">
+		<div id="vk_playlist_-177060309_2"></div>
+		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+		<script type="text/javascript">
+		(function() {
+			VK.Widgets.Playlist("vk_playlist_-177060309_2", -177060309, 2,'20b4d09d89f11517fe');
+		}());
+			</script>
+								</div>
+            </div>
+        </div>
+    </div>
+</section>
