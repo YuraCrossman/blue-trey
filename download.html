@@ -62,7 +62,7 @@
 																	<img class="card-image-top" src="img/blue_trey_full_body.png">
 															<div class="card-body">
 																	<h4 class="card-title">VCV</h4>
-																	<button class="btn" type="button" id="test1" name="button">Play</button><br>
+																	<button class="btn" type="button" id="test3" name="button">Play</button><br>
 																	<audio preload src="audio/trey.mp3">Error</audio><br>
 																	<button class="btn btn-primary" onclick="location.href='https://clck.ru/S7qTn'">Download</button>
 															</div>
@@ -122,16 +122,21 @@
         </div>
     </div>
 <script>
-                              let audioplay = document.getElementsByTagName("audio");
-                                                    $("#test1").click(function(event){
-                                                        audioplay[0].play()
-                                                        .then(_ => {mediadata('Last night, Good night','Blue Trey', '');})
-                                                        .catch(error => {console.log(error);});
-                                                    });
-                                                    $("#test2").click(function(event){
-                                                        audioplay[1].play()
-                                                        .then(_ => {mediadata('Я творю - что хочу','Blue Trey', '');})
-                                                        .catch(error => {console.log(error);});
-                                                    });
-                            </script>
+	let audioplay = document.getElementsByTagName("audio");
+  	$("#test1").click(function(event){
+    	audioplay[0].play()
+      .then(_ => {mediadata('Last night, Good night','Blue Trey', '');})
+      .catch(error => {console.log(error);});
+    });
+    $("#test2").click(function(event){
+    audioplay[1].play()
+    .then(_ => {mediadata('Я творю - что хочу','Blue Trey', '');})
+    .catch(error => {console.log(error);});
+    });
+		$("#test3").click(function(event){
+    audioplay[1].play()
+    .then(_ => {mediadata('RIP=RELEASE','Blue Trey', '');})
+    .catch(error => {console.log(error);});
+    });
+</script>
 </section>
