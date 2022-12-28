@@ -207,10 +207,10 @@
             if (getPlatform()=='Windows'){
                 $('#device').html('<h4 id="device">Youre platform: '+getPlatform()+'</h4><br><h6>Well done!</h6>');
             }
-            else if (getPlatform()=='Linux'){
-                $('#device').html('<h4 id="device">Youre platform: '+getPlatform()+'</h4><br><h6>I hope you know what to do?</h6>');
+            else if (getPlatform()=='Linux'||'Machintoch'){
+                $('#device').html('<h4 id="device">Youre platform: '+getPlatform()+'</h4><br><h6>Oh... Oh my god, is this OpenUTAU?</h6>');
             }
-            else if (getPlatform()=='Android'||'iPhone'||'iPad'||'Symbian'||'Windows Phone'||'Tablet OS'||'Machintoch'){
+            else if (getPlatform()=='Android'||'iPhone'||'iPad'||'Symbian'||'Windows Phone'||'Tablet OS'){
                 $('#device').html('<h4 id="device">Youre platform: '+getPlatform()+'</h4><br><h3>This UTAU and program are not supported by your device!</h3>');
             }
             else if (getPlatform()=='Неизвестная платформа!'||'Unknown platform!'){
@@ -733,17 +733,6 @@
                             <i style="margin-left :17px;">:tomato:</i>
                             <p class="text-center"><a class='fab zocial-vk' href='https://vk.com/pablick_debilki' target='_blank' data-toggle='tooltip' title='VKontakte GaiiJo' data-placement="bottom"></a></p>
                         </a></div>
-                        <a href="javascript:senya()"><div class="client-item">
-                            <img class="img-responsive" src="img/senya.png" alt=" ">
-                            <i style="margin-left :17px;">:bottle:</i>
-                            <script>
-                                function senya(){
-                                    var audi = new Audio();
-                                    audi.src='audio/senya.mp3';
-                                    audi.autoplay=true;
-                                }
-                            </script>
-                        </a></div>
                     <!-- End of Client Holder -->
                 </div>
             </div>
@@ -817,7 +806,7 @@
                 <div class="ya-share2" style="margin: 5px;" data-services="vkontakte,facebook,twitter,reddit,linkedin,tumblr,whatsapp,telegram" data-limit="3"></div>
             </div>
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">&copy; 2020 Yura Crossman</p>
+         		<p class="mx-auto text-center mb-0">&copy; 2023 Yura Crossman</p>
          	</div>
             <div class="col-lg-4 col-md-12">
             	<nav class="nav nav-mastfoot justify-content-center">
